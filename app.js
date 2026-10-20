@@ -61,6 +61,7 @@ function observeTask(){
   selected=pollutants[task.p].id;
   scene?.show(task.scene,task.p,true);
   setStatic();
+  $('viewport').scrollIntoView({behavior:'auto',block:'center'});
 }
 function start(){
   mode='learn';current=0;done=0;answered=false;feedback=null;wrongCount=0;
